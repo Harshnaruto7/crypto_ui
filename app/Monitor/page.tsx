@@ -4,8 +4,8 @@ import Navbar from "../components/Navbar";
 import Card from "../components/card"
 import Footer from "../components/footer";
 
-import { FaEthereum } from "react-icons/fa";
-import { BsThreeDotsVertical } from "react-icons/bs";
+import { FaCoins } from "react-icons/fa6";
+import { FaWallet } from "react-icons/fa6";
 
 
 
@@ -19,39 +19,58 @@ export default function Monitor() {
                     <div>
                         <Navbar></Navbar>
                         <div>
-                            <div>
+                            <div className=" flex  justify-center w-[579px] ml-[26px]">
                                 <div className="max-w-auto h-[25vh] rounded-lg overflow-hidden shadow-lg bg-white p-[10px]">
-                                    <h1 className=" font-bold text-lg">$72.10<span className=" font-light">/week</span><span className="ml-[494px]">10.200%</span></h1>
+                                    <FaCoins></FaCoins> <h1 className=" font-bold text-lg">$72.10<span className=" font-light">/week</span></h1>
                                     <hr className="border-t-4 border-gray-300 my-4 "></hr>
-                                    <div className="ml-[3px] mt-[-10px]"><FaEthereum className="h-8 w-8"> </FaEthereum>
-                                        <h1 className="ml-[31px] mt-[-27px]">10.2410245836 ETH<span>= $10 070 </span></h1>
-                                        <p className="ml-[32px] mt-[-6px]">Ethereum</p>
-                                        <BsThreeDotsVertical className="ml-[624px] mt-[-26px]"></BsThreeDotsVertical>
+                                    <div className="ml-[3px] mt-[-10px]">
+                                        <h1 className="ml-[-2px] mt-[10px]">Day :<span>22.10</span></h1>
+                                        <h1 className="ml-[104px] mt-[-24px]">Month: <span>$560.2</span></h1>
+                                        <h1 className="ml-[260px] mt-[-24px]">Year: <span>$7640.2</span></h1>
 
                                     </div>
-
-
 
                                 </div>
                             </div>
 
+                            <div className="my-[10px]">
+                                <div className=" flex  justify-center w-[579px] ml-[26px]">
+                                    <div className="max-w-auto h-[25vh] rounded-lg overflow-hidden shadow-lg bg-white p-[10px] w-[387px]">
+                                        <FaWallet></FaWallet> <h1 className=" font-bold text-lg">$72.10<span className=" font-light mx-2">wallets</span></h1>
+                                        <hr className="border-t-4 border-gray-300 my-4 "></hr>
+                                        <div className="ml-[3px] mt-[-10px]">
+                                            <h1 className="ml-[-2px] mt-[10px]">ETH:<span>35%</span></h1>
+                                            <h1 className="ml-[104px] mt-[-24px]">XMR: <span>11%</span></h1>
+                                            <h1 className="ml-[260px] mt-[-24px]">ETC: <span>56%</span></h1>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
 
 
+                        </div>
+                        <div>
+                            <h1 className=" font-bold mt-[20px] ml-[27px]">00:00:00</h1>
+                            <p className=" font-light mt-[-8px] ml-[29px]">uptime</p>
+
+                            <h1 className=" font-bold mt-[-47px] ml-[427px]">0 Mh/s</h1>
+                            <p className=" font-light mt-[0px] ml-[427px]">Hashrate</p>
+
+                            <div className="ml-[427px] mt-[0px]">
+                                <p>22:19:06 0Xcc27d9700c</p>
+                                <p>22:20:06 0Xcc26d9700c</p>
+                                <p>22:21:06 0Xcc25d9700c</p>
+                                <p>22:23:06 0Xcc28d9700c</p>
+                            </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            <div className="ml-[28px] mt-[-22px]">
+                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                    Click me
+                                </button>
+                            </div>
 
 
 
@@ -69,7 +88,7 @@ export default function Monitor() {
 
 
 
-                        <div className="mt-[-35px]">
+                        <div className="mt-[-530px]">
                             <span>  <Footer></Footer></span>
                         </div>
 
